@@ -1,0 +1,49 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+
+.rere {
+	margin-top: 50px;
+  margin-bottom: 20px;
+  margin-right: 25px;
+  margin-left: 50px;
+  float:left;
+  
+}
+.text{
+ margin-top: 50px;
+  margin-bottom: 20px;
+  
+
+}
+.bla{
+margin-left: 50px;}
+
+@media(max-width:380px) {
+.rere {
+	margin-top: 50px;
+  margin-bottom: 20px;
+  margin-right: 15px;
+  margin-left: 15px;
+  float:left;
+  
+}
+
+iframe {
+	
+ width: 320px;
+  height: auto;
+}
+img{
+width: 320px;
+height: auto;}
+
+
+}	
+
+
+
+}
+

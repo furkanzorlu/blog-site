@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title> Contact Me </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+	<nav class="navbar navbar-inverse">
+<div class="container-fluid">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+
+</div>
+<div class="collapse navbar-collapse" id="mainNavBar">
+<ul class="nav navbar-nav">
+<li ><a href="index.html">HOMEPAGE</a></li>
+      <li  ><a href="blog.html">BLOG</a></li>
+      <li  ><a href="services.html">OUR SERVİCES</a></li>	
+	<li  ><a href="team.html">OUR TEAM</a></li>
+	<li ><a href="gallery.html">GALLERY</a></li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+      
+      <li class="active"> <a href="contactme.html">CONTACT ME</a></li>
+	<li><a href="registration.html">REGISTER</a></li>
+    </ul>
+</div>
+</div>
+</nav>
+	<form action="https://google.com/search" align="right" method="get">
+<input type="text" name="q" placeholder="Search" >
+<input type="submit" class="btn btn-primary" >
+</form>
+	
+	<br>
+	<center>
+<div class="container">
+<form  action="" style="width: 300px; margin=auto" >
+
+<div class="form-group">
+		<label for="Name, Surname">Name, Surname:</label>
+		<input type="Text"  class="form-control" name="Name, Surname">
+		<br><br>
+		&ensp;&ensp;
+		<label for="E-mail">E-mail:</label>&ensp;&ensp;&ensp;&ensp;&ensp;
+		<input type="Text" class="form-control" name="E-mail">
+		<br><br> &ensp;
+		<label for="Telephone">Telephone:</label>&ensp;&ensp;&ensp;
+		<input type="Text" class="form-control" placeholder="Max length is 11" name="Telephone" maxlength="11">
+		<br><br>&ensp;&ensp;&ensp;
+		Issue:
+		<input list="ıssue" class="form-control">
+
+        <datalist id="ıssue">
+        <option value="Animal">
+        <option value="Price">
+        <option value="Services">
+        <option value="Other">
+        
+        </datalist>
+		
+		<br><br>
+	    <textarea name="message" rows="10" cols="60" class="form-control" placeholder="If you have a message you want to send to me, write it here."></textarea>
+	        <br><br>
+	        <button class="btn btn-primary" onclick="window.location.href='response.html'">Send</button>
+		</form>	
+	</div>
+	<br>
+	<p align="center"><big><strong>OR</strong></big></p>
+	<p align="center">If you want to contact me, please click to the adress below:
+	<br><br>
+	<a href = "mailto:furkanzorlu@gmail.com">furkanzorlu@gmail.com</a>
+	<br><br>
+	<a href = "index.html"> <img src="home.png" width="4%" height="4%"> </a>
+	<br><br>
+	<a href="https://www.facebook.com"><img src="facebook.png"width="2%"height="2%"></a>
+	&ensp;&ensp;
+	<a href="mailto:furkanzorlu@gmail@gmail.com"><img src="gmail.png"width="2%"height="2%"></a>
+	&ensp;&ensp;
+	<a href="https://www.youtube.com"><img src="youtube.png"width="3%"height="3%"></a>
+	</p>
+	
+	<table align="center" border=2  bordercolor="red" >
+   <tr>
+    <td align="center" colspan="3" width="100">Working Hours</td>
+   </tr>
+    <tr>
+    <td width="100"></td>
+    <td width="100">Weekdays</td>
+    <td width="100">Weekend</td>
+    </tr>
+    <tr>
+   <td>Start</td>
+    <td>9.00</td>
+   <td align="center" rowspan="3">Close!</td>
+    </tr>
+    <tr>
+   <td>Finish</td>
+    <td>17.00</td>
+    </tr>
+     
+    </table>
+</body>
+</html>

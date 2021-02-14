@@ -1,0 +1,223 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> Register </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+
+<style>
+#q {
+background-color:blue
+}
+</style>
+</head>
+<body >
+
+	<nav class="navbar navbar-inverse">
+<div class="container-fluid">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+
+</div>
+<div class="collapse navbar-collapse" id="mainNavBar">
+<ul class="nav navbar-nav">
+<li ><a href="index.html">HOMEPAGE</a></li>
+      <li  ><a href="blog.html">BLOG</a></li>
+      <li  ><a href="services.html">OUR SERVİCES</a></li>	
+	<li  ><a href="team.html">OUR TEAM</a></li>
+	<li ><a href="gallery.html">GALLERY</a></li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+      
+      <li > <a href="contactme.html">CONTACT ME</a></li>
+	<li class="active"><a href="registration.html">REGISTER</a></li>
+    </ul>
+</div>
+</div>
+</nav>
+	<form action="https://google.com/search" align="right" method="get">
+<input type="text" name="q" placeholder="Search" >
+<input type="submit" class="btn btn-primary" >
+</form>
+
+ 
+   
+	<center>
+	<form name="form1"  id="myForm"  style="width: 300px; margin=auto" method="post">
+		<label for="Name (Middle Name) Surname">Name (Middle Name) Surname:</label>
+		<input   class="form-control" type="Text" id="isimsoy" name="Name (Middle Name) Surname"  >
+		<br><br>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+		<label for="Password">Password:</label> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+		<input class="form-control" type="Password" id="pass" placeholder="Enter your password" name="pass1">
+		<br><br>
+		<label for="Password">Repeat Password:</label> &ensp;&ensp;&ensp;
+		<input class="form-control" type="Password" id="repass"  placeholder="Again enter your password" name="pass2" required onchange="return check()" >
+		<br><br>
+		<label  for="telephone">Telephone Number:</label>
+		<input class="form-control" id="numb" type="number"  name="telephone"  required >
+		<br><br>
+		<label for="E-mail">E-mail:</label>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+		<input class="form-control" type="email" id="email" name="E-mail">
+		<br><br>&ensp;&ensp;&ensp;&ensp;
+		<label for="DateofBirth">Date of Birth:&emsp;</label>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+        <input class="form-control" id="datee" type="text" placeholder="Enter your Birthday" name="DateofBirth" 
+		<br><br>&ensp;&ensp;&ensp;
+		<label  for="Department">Department:</label>&ensp;&ensp;&ensp;
+		<select class="form-control">
+			<option value="Computer Engineering">Computer Engineering</option>
+			<option value="Environmental Egineering">Environmental Engineering</option>
+			<option value="Electrical and Electronic Engineering">Electrical and Electronic Engineering</option>
+			<option value="Industrial Engineering">Industrial Engineering</option>
+			<option value="Civil Engineering">Civil Engineering</option>
+			<option value="Mechanical Engineering">Mechanical Engineering</option>
+		</select>
+		<br><br>
+		Gender: <br>
+		<input type="radio" value="kadın" name="nesne">Famele 
+<input type="radio" value="erkek" name="nesne">Male
+		<br><br>
+		<textarea class="form-control" name="message" rows="10" cols="60" placeholder="About me"></textarea>
+		<br><br>
+		<label for="Upload Your Photo">Upload Your Photo:</label>&emsp;&emsp;
+		<input type="file" name="fileToUpload">
+		<br><br>
+		<label for="Mark Your Interests">Mark Your Interests:</label>
+		<br>
+		<input type="checkbox" name="item_animal" value="Car">Animal<br>
+		<input type="checkbox" name="item_games" value="Games">Games<br> 
+		<input type="checkbox" name="item_music" value="Music">Music<br>
+		<input type="checkbox" name="item_science" value="Science">Science<br>
+		<input type="checkbox" name="item_sport" value="Sport">Sport<br>
+		<input type="checkbox" name="item_movies" value="Movies">Movies<br><br>
+		<button type="button" class="btn btn-primary"  onclick="myFunction()">  Submit </button>
+		<br><br>
+		<button  type="button"><a href="registration.html">Reset</a></button>
+		<br><br>
+		
+		<a href = "index.html"> <img src="home.png" width="20%" height="4%"> </a>
+		
+		
+		
+</form>
+
+
+
+<script>
+function myFunction() {
+  var x, text;
+  var dateString=document.getElementById("datee").value;
+ 
+   var letters = /^[a-zA-ZöçşığüÖÇŞİĞÜ,]+(\s{0,1}[a-zA-ZöçşığüÖÇŞİĞÜ, ])*$/;
+  
+  var mail = document.getElementById("email").value;
+  var isimm = document.getElementById("isimsoy").value;
+  var inputtxt=document.getElementById("pass").value;
+  var re = /(((0|1)[0-9]|2[0-9]|3[0-1])\-(0[1-9]|1[0-2])\-((19|20)\d\d))$/;
+  
+	var regex = /^[a-zA-Z0-9._-]+@([a-zA-Z0-9.-]+.)+([.])+[a-zA-Z0-9.-]{2,4}$/;
+	var decimal=  /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,16}$/;
+	
+  
+  x = document.getElementById("numb").value;
+  
+   
+ if(document.getElementById("isimsoy").value=="" || letters.test(isimm)==false)
+	{
+	alert("Name and surname fields should not be empty and contain only letters.");
+	return false;
+    }
+	else{
+	
+	}
+	if (isimm.length < 4) {
+alert("your name and surname must consist of at least 4 letters");
+return false;
+}
+	 
+    if(decimal.test(inputtxt)==false){
+	alert('your password must consist of at least 8 and at most 16 characters plus at least one uppercase letter, a number and a special character');
+	 return false;
+	}
+	else{
+	
+	}
+   if (   x.length!= 11 ) {
+  alert("phone number is invalid");
+return false;
+     	
+	}
+     if (regex.test(mail)==false) 
+	{
+	
+	alert("e-mail address is invalid");
+	return false;
+	}
+	
+	
+	
+
+	 if (re.test(dateString)) {
+            var parts = dateString.split("/");
+            var dtDOB = new Date(parts[1] + "/" + parts[0] + "/" + parts[2]);
+            var dtCurrent = new Date();
+            
+            if (dtCurrent.getFullYear() - dtDOB.getFullYear() < 0 ) {
+			alert("please enter a valid date");
+                return false;
+            }
+ 
+            if (dtCurrent.getFullYear() - dtDOB.getFullYear() == 0) {
+ 
+                
+                
+            }
+           
+        } else {
+            alert("date format error please enter dd-mm-yyyy");
+            return false;
+        }
+		
+	 var answer = confirm("Do you want to complete your registration?");
+        if (answer){
+                alert("Your registration is complete");
+                window.location = "registration.html";
+        }
+        else{
+                alert("Please try again")
+        }
+   
+  
+	
+	
+	}
+	function check() {
+	 var pass2 = document.getElementById('repass');
+	 var pass1=document.getElementById("pass");
+			      
+			 	  
+			 	  if (pass1.value != pass2.value ) {
+			 	 	alert("The two emails must match!!");
+			  	  }
+				
+			}
+  
+  
+   
+   
+
+
+
+
+	
+</script>
+		
+		
+</body>
+</html>
